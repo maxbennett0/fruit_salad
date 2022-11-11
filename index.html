@@ -27,11 +27,49 @@
   </header>
   <main>
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-12">
-          <div id="app"></div>
+      <div class="row justify-content-between">
+        <div class="col-6 my-3 text-center">
+          <form onsubmit="app.playersController.addPlayer()">
+            <label for="name">Player Name:</label>
+            <input required type="text" id="name" name="name">
+            <button class="btn btn-primary">Submit</button>
+          </form>
         </div>
       </div>
+      <!-- SECTION player template -->
+      <section class="row justify-content-end">
+        <div class="col-5 d-flex card shadow justify-content-evenly" id="player">
+          <!-- <h3>
+              Player
+            </h3>
+            <h4>
+              Score: 0
+            </h4> -->
+        </div>
+      </section>
+      <!--  -->
+      <!-- SECTION active template -->
+      <section id="activeTemplate" class="row">
+        <!-- <div class="col-5 card d-flex justify-content-around">
+            <div class="row justify-content-around">
+              <div class="col-5">
+                <span>Name:</span>
+              </div>
+              <div class="col-5">
+                <span>Score:</span>
+              </div>
+            </div>
+          </div> -->
+        <!--  -->
+      </section>
+      <section id="activeFruit" class="row my-2 justify-content-start">
+        <!-- <div class="col-5 text-center card p-4">
+          <h1>Banana</h1>
+          <form action="">
+            <input type="text">
+          </form>
+        </div> -->
+      </section>
     </div>
   </main>
   <footer class="bg-dark text-light">
